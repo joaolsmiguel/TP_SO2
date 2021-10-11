@@ -1,0 +1,166 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Portugal) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTG)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_ICON_CONTROL         ICON                    "C:\\Users\\jony\\Downloads\\controlador_aereo.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_LIGAR_CONTROL DIALOGEX 0, 0, 215, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LIGAR CONTROLADOR"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancelar",IDOK,158,76,50,14
+    LTEXT           "Defina o maximo possivel de Avioes:",IDC_STATIC,19,23,118,8
+    EDITTEXT        IDC_EDIT_MAX_AV,146,21,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ligar Controlador",IDC_BUTTON_LIGA_CONTROL,7,76,147,14
+    LTEXT           "Defina o maximo possivel de Aeroportos:",IDC_STATIC,7,49,137,8
+    EDITTEXT        IDC_EDIT_MAX_AP,146,47,50,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ADD_AP DIALOGEX 0, 0, 231, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ADICIONAR AEROPORTO"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,174,71,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,71,50,14
+    EDITTEXT        IDC_EDIT_NOME_AP,154,14,65,14,ES_AUTOHSCROLL
+    LTEXT           "Nome do Aeroporto que quer adicionar:",IDC_STATIC,14,18,128,8
+    LTEXT           "Posicao X:",IDC_STATIC,19,48,34,8
+    LTEXT           "Posicao Y:",IDC_STATIC,125,47,34,8
+    EDITTEXT        IDC_EDIT_POS_X,63,44,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POS_Y,166,45,51,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "ADICIONAR AEROPORTO",IDC_BUTTON_CRIA_AP,16,71,139,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENUEX
+BEGIN
+    MENUITEM "Ligar Controlador",           ID_LIGAR_CONTROLADOR,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    MENUITEM "Criar Aeroporto",             ID_CRIAR_AEROPORTO,MFT_STRING,MFS_GRAYED
+    POPUP "Suspender",                      65535,MFT_STRING,MFS_GRAYED
+    BEGIN
+        MENUITEM "Avioes",                      ID_SUSPENDER_AVIOES,MFT_STRING,MFS_ENABLED
+        MENUITEM "Passageiros",                 ID_SUSPENDER_PASSAGEIROS,MFT_STRING,MFS_ENABLED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_LIGAR_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG_ADD_AP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_LIGAR_CONTROL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ADD_AP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Portuguese (Portugal) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
